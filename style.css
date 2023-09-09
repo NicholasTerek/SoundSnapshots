@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-image: linear-gradient(80deg, rgb(138, 53, 218), rgb(230, 61, 154));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container{
+    position: relative;
+    width: 40rem;
+    color: #fff;
+    padding: 20px 30px;
+    border-radius: 16px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background: rgba(14, 9, 9, 0.25);
+    -webkit-background-filter: blur(8px);
+    box-shadow: 0 2px 1px hsla(0,0%,100%,0.5) inset,
+                0 -2px 1px hsla(250,70%,5%,0.3) inset,
+                0 -2px 6px hsla(0,0%,100%,0.25);
+}
+
+.interact{
+  display: flex;
+  position: relative;
+  right: -19%;
+}
+
+.text {
+  width: 60%;
+  border: 2px solid#ffffff;
+  border-radius: 5px;
+  color: #fff;
+  transition: all 0.3s ease;
+  background-color: transparent;
+  padding: 5px 15px;
+  cursor: not-allowed;
+}
+
+.start-button {
+  left: -20%;
+  align-self: bottom;
+  position: absolute;
+  right:    0;
+  bottom:   0;
+}
+
+h1{
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+p{
+    font-size: 14px;
+    color: #ccc;
+    line-height: 1.4rem;
+    text-align: justify;
+    margin-bottom: 7px;
+}
+
+.gen-form{
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    margin-left: 10px;
+}
+
+button{
+    width: 20%;
+    height: 36px;
+    color: #fff;
+    border: 1px solid #ccc;
+    background: #20232c;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+button:hover{
+    background: #68a760;
+    border-color: transparent;
+}
+
+#loading{
+    display: none;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+button:disabled, button[disabled]{
+    border: 1px solid #999;
+    background-color: #ccc;
+    color: #666;
+    cursor: auto;
+}
+
+.result{
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#image-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-bottom: 10px;
+    max-width: 80%;
+}
+
+#image-grid img{
+    max-width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+#image-grid img:hover{
+    border-color: #68a760;
+}
+
+#up{
+    position: absolute;
+    height: 800px;
+    width: 800px;
+    border-radius: 50%;
+    background-image: linear-gradient(80deg, rgb(5, 124, 172), rgba(43, 247, 202, 0.5));
+    filter: blur(80px);
+    animation: down 45s infinite;
+}
+
+#down{
+    position: absolute;
+    right: 0;
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    background-image: linear-gradient(80deg, rgba(245, 207, 82, 0.8), rgba(199, 10, 114));
+    filter: blur(80px);
+    animation: up 45s infinite;
+}
+
+#left{
+    position: absolute;
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    background-image: linear-gradient(80deg, rgb(5, 124, 172), rgba(183, 253, 52, 0.8));
+    filter: blur(80px);
+    animation: left 45s infinite;
+}
+
+#right{
+    position: absolute;
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    background-image: linear-gradient(80deg, rgba(26, 248, 18, 0.6), rgba(199, 10, 52, 0.8));
+    filter: blur(80px);
+    animation: left 45s infinite;
+}
+
+  @keyframes down {
+      0%, 100%{
+        top: -100px;
+      }
+      70%{
+        top: 700px;
+      }
+  }
+
+  @keyframes up {
+      0%, 100%{
+        bottom: -100px;
+      }
+      70%{
+        bottom: 700px;
+      }
+  }
+
+  @keyframes left {
+      0%, 100%{
+        left: -100px;
+      }
+      70%{
+        left: 1300px;
+      }
+  }
+
+  @keyframes right {
+      0%, 100%{
+        right: -100px;
+      }
+      70%{
+        right: 1300px;
+      }
+  }
