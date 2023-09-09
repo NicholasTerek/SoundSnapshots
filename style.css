@@ -30,28 +30,28 @@ body{
 }
 
 .interact{
-  display: flex;
-  position: relative;
-  right: -19%;
+    display: flex;
+    position: relative;
+    right: -19%;
 }
 
 .text {
-  width: 60%;
-  border: 2px solid#ffffff;
-  border-radius: 5px;
-  color: #fff;
-  transition: all 0.3s ease;
-  background-color: transparent;
-  padding: 5px 15px;
-  cursor: not-allowed;
+    width: 60%;
+    border: 2px solid#ffffff;
+    border-radius: 5px;
+    color: #fff;
+    transition: all 0.3s ease;
+    background-color: transparent;
+    padding: 5px 15px;
+    cursor: not-allowed;
 }
 
 .start-button {
-  left: -20%;
-  align-self: bottom;
-  position: absolute;
-  right:    0;
-  bottom:   0;
+    left: -20%;
+    align-self: bottom;
+    position: absolute;
+    right:    0;
+    bottom:   0;
 }
 
 h1{
@@ -114,6 +114,10 @@ button:disabled, button[disabled]{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.error{
+    text-align: center;
 }
 
 #image-grid{
