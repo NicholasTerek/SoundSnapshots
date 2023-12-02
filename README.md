@@ -11,3 +11,4 @@ SoundSnapshots is an innovative speech-to-AI website hosted on Google Firebase, 
 
 ![image](https://github.com/NicholasTerek/SoundSnapshots/assets/139080309/d85ee0bf-f4fb-4fce-b43f-c6a23c281b70)
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+##Try it out here https://soundsnapshots-9ab8a.web.app/
